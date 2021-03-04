@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Management App</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="todo-app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <main>
+    <article class="Main-Todo-Layout">
+      <h1 class="TodoPage-title">My Todo-list</h1>
+      <section class="Todo-new">
+        <input class="Todo-text" type="text" placeholder="What's Next ">
+        <input class="Todo-date" type="date">
+        <input class="Todo-AddButton" type="button" value="Add">
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSection-heading">
+          <p class="TodoSection-title"> Due Today </p>
+          <p class="sectionTitle-remaining-item"> 0/4</p>
+        </div>
+        <ul class="Ul-listing-items">
+          <li class="TodoItem">
+            <input class="TodoItems-Checkbox" type="checkbox" name="checkBox2">
+            <p class="TodoSection-todo">Submit saas 2001 Project </p>
+            <p class="Overdue-Todoitem"> Overdue</p>
+            <a class="TodoItem-delete" href="javascript:void(0)">
+              <img class="delete-icon" src="delete.png" alt="Not connected">
+            </a>
+          </li>
+          <li class="TodoItem">
+            <input class="TodoItems-Checkbox" type="checkbox" name="checkBox2" unchecked>
+            <p class="TodoSection-todo">Call accountant</p>
+            <a class="TodoItem-delete" href="javascript:void(0)">
+              <img class="delete-icon" src="delete.png" alt="Not connected">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSection-heading">
+          <p class="TodoSection-title">Due Tomorrow </p>
+          <p class="sectionTitle-remaining-item"> 0/3</p>
+        </div>
+        <ul class="Ul-listing-items">
+          <li class="TodoItem">
+            <input class="TodoItems-Checkbox" type="checkbox" name="checkBox2" unchecked>
+            <p class="TodoSection-todo">Refill groceries</p>
+            <a class="TodoItem-delete" href="javascript:void(0)">
+              <img class="delete-icon" src="delete.png" alt="Not connected">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSection-heading">
+          <p class="TodoSection-title"> Remaining </p>
+          <p class="sectionTitle-remaining-item"> 0/3</p>
+        </div>
+        <ul class="Ul-listing-items">
+          <li class="TodoItem">
+            <input class="TodoItems-Checkbox" type="checkbox" name="checkBox2" unchecked>
+            <p class="TodoSection-todo">Type Something</p>
+            <a class="TodoItem-delete" href="javascript:void(0)">
+              <img class="delete-icon" src="delete.png" alt="Not connected">
+            </a>
+          </li>
+          <li class="TodoItem">
+            <input class="TodoItems-Checkbox" type="checkbox" name="checkBox2" unchecked>
+            <p class="TodoSection-todo">Type Something</p>
+            <a class="TodoItem-delete" href="javascript:void(0)">
+              <img class="delete-icon" src="delete.png" alt="Not connected">
+            </a>
+          </li>
+          <li class="TodoItem">
+            <input class="TodoItems-Checkbox" type="checkbox" name="checkBox2" unchecked>
+            <p class="TodoSection-todo">Type Something</p>
+            <a class="TodoItem-delete" href="javascript:void(0)">
+              <img class="delete-icon" src="delete.png" alt="Not connected">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>

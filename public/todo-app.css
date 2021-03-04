@@ -1,0 +1,98 @@
+body{
+  font-family: sans-serif;
+  max-width: 600px;
+  margin-top: 32px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .TodoPage-title{
+    line-height: 1.6;
+    color: #453C52;
+    font-size: 32px;
+    font-weight: bold;
+  }
+.Todo-new{
+  display: flex;
+}
+.Todo-text{
+  height: 32px;
+  width: 40%;
+  border-radius: 8px;
+  padding-left: 20px;
+  margin-right: 8px;
+}
+.Todo-date{
+  height: 32px;
+  width: 20%;
+  border-radius: 8px;
+  margin-right: 8px
+}
+.Todo-AddButton{
+  background-color: #48BB78;
+  color: white;
+  font-size: 18px;
+  height: 38px;
+  width: 10%;
+  border-radius: 8px;
+}
+.TodoSection{
+  margin-top:20px;
+}
+.TodoSection-heading{
+  display: flex;
+  align-items: center;
+}
+.TodoSection-title{
+  line-height: 1.4;
+  color: #453C52;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.sectionTitle-remaining-item{
+  font-size: 18px;
+  font-weight: lighter;
+}
+.TodoItems-Checkbox{
+  width: 20px;
+  height: 20px;
+  margin-left:32px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+.TodoSection-todo{
+  font-size: 20px;
+  line-height: 1.2%;
+  margin-left: 18px;
+  color: #453C52;
+  padding-block-start: 15px;
+}
+.Overdue-Todoitem{
+color:red;
+font-size: 16px;
+margin-left: 8px;
+margin-top: 8px;
+}
+.TodoItem{
+display: flex;
+padding-block-start: 15px;
+}
+.delete-icon{
+  width: 14px;
+  height: 16px;
+  margin-left:10px;
+  display: none;
+  margin-top:8px;
+}
+.Ul-listing-items{
+  margin-right: 30px;
+}
+.TodoItem:hover{
+  background-color: rgb(217, 224, 235);
+
+}
+.TodoItem:hover .delete-icon{
+  display: inline;
+}
