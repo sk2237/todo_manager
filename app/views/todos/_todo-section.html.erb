@@ -6,8 +6,9 @@
   <ul>
     <%todos.each do |todo|%>
       <li class="TodoItem">
-        <input class="TodoItems-Checkbox" type="checkbox" name="checkBox2">
-         <p class="TodoSection-todo"><%= todo.todo_text %> </p>
+        <input class="TodoItems-Checkbox" type="checkbox" name="checkBox2"  <%=todo.completed ? "checked" : "" %> />
+
+         <p class=<%=todo.completed ? "Cut_Items" : "TodoSection-todo" %> ><%= todo.todo_text %> </p>
          <% if show_due_date%>
           <p class= "TodoItem-dueDate"> <%=todo.due_date.to_s(:short)%> </p>
         <% end %>
