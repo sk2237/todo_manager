@@ -6,11 +6,16 @@
   <ul>
     <%todos.each do |todo|%>
       <li class="TodoItem">
-        <input class="TodoItems-Checkbox" type="checkbox" name="checkBox2"  <%=todo.completed ? "checked" : "" %> />
-
-         <p class=<%=todo.completed ? "Cut_Items" : "TodoSection-todo" %> ><%= todo.todo_text %> </p>
-         <% if show_due_date%>
-          <p class= "TodoItem-dueDate"> <%=todo.due_date.to_s(:short)%> </p>
+      <%= form_with(url: "/todos/#{todo.id}",method: "put") do %>
+        <input class="TodoItems-Checkbox"
+         type="checkbox"
+         name="completed"
+          <%=todo.completed ? "checked" : "" %>
+          onclick="this.form.submit()" />
+      <%end%>
+        <p class=<%=todo.completed ? "Cut_Items" : "TodoSection-todo" %> ><%= todo.todo_text %> </p>
+        <% if show_due_date%>
+        <p class= "TodoItem-dueDate"> <%=todo.due_date.to_s(:short)%> </p>
         <% end %>
         <a class="TodoItem-delete" href="javascript:void(0)">
           <img class="delete-icon" src="delete.png" alt="Not connected">
