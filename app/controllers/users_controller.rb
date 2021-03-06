@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    render plain: User.all.map { |user| "#{user.name} #{user.password}" }.join("\n")
+    render plain: User.all.map { |user| "#{user.first_name} #{user.last_name} #{user.password_digest}" }.join("\n")
   end
 
   def create
