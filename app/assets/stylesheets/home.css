@@ -11,5 +11,6 @@
   background-color: lightgrey;
   font-size: 18px;
   margin-bottom: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
